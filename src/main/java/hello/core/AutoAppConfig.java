@@ -5,7 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.FilterType;
 
 @Configuration
-@ComponentScan(
+@ComponentScan( // @Component scan 이 알아서 bean으로 등록해주고 알아서 스플링으로 올려주는 역할을 함
         basePackages = "hello.core", // 탐색할 패키지의 시작위치 지정하는 방법.
         basePackageClasses = AutoAppConfig.class,
         excludeFilters= @ComponentScan.Filter(type = FilterType.ANNOTATION,
