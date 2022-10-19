@@ -14,7 +14,7 @@ public class BeanLifeCycleTest {
 
     @Test
     public void lifeCycleTest() {
-        ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class);
+        ConfigurableApplicationContext ac = new AnnotationConfigApplicationContext(LifeCycleConfig.class); // 스프링 컨테이너
         NetworkClient client = ac.getBean(NetworkClient.class);
         ac.close();
     }
