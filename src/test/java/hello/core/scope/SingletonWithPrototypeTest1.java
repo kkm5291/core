@@ -23,7 +23,7 @@ public class SingletonWithPrototypeTest1 {
 
         PrototypeBean prototypeBean2 = ac.getBean(PrototypeBean.class);
         prototypeBean2.addCount();
-        assertThat(prototypeBean2.getCount()).isEqualTo(1);
+        assertThat(prototypeBean2.getCount()).isEqualTo(1); // expected 값을 수정
 
 
 
